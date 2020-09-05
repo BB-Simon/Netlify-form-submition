@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HTML Form</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!--Logo-->
+  <header class="text-center bg-light py-3 mb-5">
+    <img src="./transparent-logo.png" alt="" />
+    <h1>CRYOSKIN WAIVER</h1>
+  </header>
+
+  <div class="container border mb-5" id="original-form">
+    <!--Client Information-->
+    <div class="form-title font-weight-bold bg-light">Client Information</div>
+    <form action="" id="client-form" name='Client Form' netlify>
+      <div class="form-group p-3">
+        <div class="form-row">
+          <div class="col-sm-6 mt-3">
+            <label for="">Name</label>
+            <input type="text" name="Name" class="form-control" placeholder="Enter your name" required />
+          </div>
+
+          <div class="col-md-6 mt-3">
+            <label for="">Date of Birth</label>
+            <input type="date" class="form-control" name="Birth Date" required />
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="col-md-6 mt-3">
+            <label for="">Email</label>
+            <input type="email" name="Email" class="form-control" placeholder="example@domain.com" required />
+          </div>
+
+          <div class="col-md-6 mt-3">
+            <label for="">Phone Number</label>
+            <input type="tel" name="Phone Number" class="form-control" placeholder="+69123456789" required />
+          </div>
+        </div>
+      </div>
+
+      <!--Agreement-->
+      <div class="agreement">
+        <!--title-->
+        <h4 class="font-weight-bold mt-5 mb-3 text-center">
+          ASSUMPTION OF RISK, WAIVER, AND RELEASE
+        </h4>
+        <p>
+          By engaging Hair MW (for the purposes hereof referred to together
+          herein as the “Company”) to provide Cryoskin treatments
+          (“Services”), I hereby acknowledge on behalf of myself, my heirs,
+          personal representatives and/or assigns, that there are certain
+          inherent risks and dangers associated with receiving Services. At
+          all times, I shall comply with all stated and customary terms,
+          posted safety signs, rules, and verbal instructions given to me by
+          staff. If in the subjective opinion of the Company’s staff, I would
+          be at physical risk in receiving Services, I understand and agree
+          that I may be denied access to Services until I furnish the Company
+          with an opinion letter from my medical doctor, at my sole cost and
+          expense, specifically addressing the Company’s concerns and stating
+          that the Company’s concerns are unfounded.
+        </p>
+
+        <p>
+          I hereby (1) agree to assume full responsibility for any and all
+          injuries or damage which are sustained or aggravated by me in
+          relation to my receiving of the Services, (2) release, indemnify,
+          and hold harmless the Company, its direct and indirect parent,
+          subsidiary affiliate entities, and each of their respective
+          officers, directors, members, employees, representatives and agents,
+          and each of their respective successors and assigns and all others,
+          from any and all responsibility, claims, actions, suits, procedures,
+          costs, expenses, damages, and liabilities to the fullest extent
+          allowed by law arising out of or in any way related to the Services,
+          and (3) represent that: (a) I have no medical or physical condition
+          that would prevent me from receiving the Services, (b) I do not have
+          a physical or mental condition that would put me in any physical or
+          medical danger, (c) I have not been instructed by a physician to not
+          receive Services, (d) no warranty or guarantee, or other assurance,
+          has been made to me covering the results of the Services, (e)
+          knowing the risks involved I nevertheless chose to voluntarily
+          request the Services. Notwithstanding the foregoing (and by way of
+          illustration only and not limitation) if any of the following
+          contraindications apply to me or if I’m unsure for any reason, I
+          hereby acknowledge the Company’s recommendation that I consult a
+          medical physician before receiving Services.
+        </p>
+
+        <!--Title2-->
+        <h5 class="font-weight-bold mt-5 mb-3">
+          Please review the contraindications (conditions that make the
+          service unadvisable) below:
+        </h5>
+        <!--subtitle 1-->
+        <p class="subtitle font-weight-bold mt-4 mb-2 p-3 bg-light">
+          Contraindications of Cryoskin Slimming:
+        </p>
+        <ul>
+          <li>CoolSculpting in the past 4 weeks</li>
+          <li>Severe Raynaud’s Syndrome</li>
+          <li>Severe Allergy to Cold</li>
+          <li>
+            Cold-related Illness (Cryoglobulinemia, Paroxysmal Cold
+            Hemoglobinuria, Cold Agglutinin Disease)
+          </li>
+          <li>Progressive Diseases (MS, ALS, Parkinson’s, Neuropathy)</li>
+          <li>Active Cancer</li>
+          <li>HIV/AIDS</li>
+          <li>Cardiovascular Disease</li>
+          <li>Lower Limb Ischemia</li>
+          <li>Lymphatic Disorders</li>
+          <li>Uncontrolled Diabetes or Diabetes-related complications</li>
+          <li>Severe Kidney or Liver Disease</li>
+          <li>Pregnancy/Breastfeeding</li>
+          <li>Bacterial and viral infections of the skin</li>
+          <li>Wound healing disorders</li>
+          <li>Circulatory disorders</li>
+          <li>Surgery in the past 6 months</li>
+          <li>Pacemaker/metal implants</li>
+          <li>Active/Severe Eczema, rashes, or dermatitis</li>
+          <li>Use of topical antibiotics in desired treatment area</li>
+          <li>Silicone/other implants in desired treatment area</li>
+          <li>Mesh inserts in the desired treatment area</li>
+          <li>Irremovable body piercings in the desired treatment area</li>
+          <li>Incision scar(s) in the desired treatment area</li>
+          <li>Open or infected wounds</li>
+          <li>Impaired skin sensation</li>
+          <li>Known sensitivity or allergy to propylene glycol</li>
+          <li>Hernia in or adjacent to desired treatment area</li>
+          <li>
+            Active implanted device such as pacemaker or defibrillator in or
+            adjacent to desired treatment area
+          </li>
+        </ul>
+
+        <div class="confirm-checkbox form-row my-3">
+          <div class="col-12 allCenter">
+            <input type="checkbox" class="p-0" required />
+            <label for="" class="text-muted m-0 pl-3"></label>
+            *I have read and acknowledged the contraindications of Cryoskin
+            Slimming.</label>
+          </div>
+        </div>
+
+        <!--subtitle 2-->
+        <p class="subtitle font-weight-bold mt-4 mb-2 p-3 bg-light">
+          Contraindications for Cryoskin Toning:
+        </p>
+        <ul>
+          <li>Severe Raynaud’s</li>
+          <li>Severe Allergy to Cold</li>
+          <li>
+            Cold-related Illness (Cryoglobulinemia, Paroxysmal Cold
+            Hemoglobinuria, Cold Agglutinin Disease)
+          </li>
+          <li>Progressive Diseases (MS, ALS, Parkinson’s, Neuropathy)</li>
+          <li>Pregnancy/Breastfeeding</li>
+          <li>Cardiovascular Disease or Lower Limb Ischemia</li>
+          <li>Bacterial and viral infections of the skin</li>
+          <li>Wound healing disorders</li>
+          <li>Circulatory disorders</li>
+          <li>Surgery in the past 6 months</li>
+          <li>Pacemaker/metal implants</li>
+          <li>Active/Severe Eczema, rashes, or dermatitis</li>
+          <li>Silicone/other implants in desired treatment area</li>
+          <li>Use of topical antibiotics in desired treatment area</li>
+          <li>Mesh inserts in the desired treatment area</li>
+          <li>Irremovable body piercings in the desired treatment area</li>
+          <li>Impaired skin sensation</li>
+          <li>Open or infected wounds</li>
+          <li>Known sensitivity or allergy to propylene glycol</li>
+          <li>
+            Active implanted device such as pacemaker or defibrillator in or
+            adjacent to desired treatment area
+          </li>
+        </ul>
+
+        <div class="confirm-checkbox form-row my-3">
+          <div class="col-12 allCenter">
+            <input type="checkbox" class="p-0" required />
+            <label for="" class="text-muted m-0 pl-3">*I have read and acknowledged the contraindications of Cryoskin
+              Facial.</label>
+          </div>
+        </div>
+
+        <!--Subtitle 3-->
+        <p class="subtitle font-weight-bold mt-4 mb-2 p-3 bg-light">
+          PHOTOGRAPHY RELEASE
+        </p>
+        <div class="p-3">
+          <p>
+            In participating in the Services, you may be photographed, videoed
+            or otherwise recorded by the Company for safety, result
+            monitoring, marketing and training purposes.
+          </p>
+
+          <div class="confirm-checkbox form-row mb-3">
+            <div class="col-12 allCenter">
+              <label for="" class="m-0 font-weight-bold">
+                If you do not give consent to such usage of your imagery by
+                the Company please initial here:
+                <input type="checkbox" class="p-0" /></label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Signature and Date -->
+      <div class="form-row mt-3 p-3">
+        <p>
+          I have read this Assumption of Risk, Waiver, and Release, fully
+          understand its terms, and understand that I am giving up substantial
+          rights, including my right to sue the Company under certain
+          circumstances. I acknowledge that I am signing this waiver freely
+          and voluntarily. The term of this waiver is indefinite.
+        </p>
+        <div class="col-lg-6 mt-3 d-flex flex-column">
+          <label for="" class="d-block m-0">Signature</label>
+          <canvas id="sig-canvas" height="150" width="500" class="border rounded">
+            <input type="text" name="Signature" id="signature-input" />
+
+          </canvas>
+          <!-- <button class="btn btn-primary" type="button" id="sig-submitBtn">
+              Submit Signature
+            </button> -->
+          <button class="btn align-self-end" type="button" id="sig-clearBtn">
+            Clear Signature
+          </button>
+        </div>
+
+        <div class="col-lg-6 mt-3">
+          <label for="" class="m-0">Date</label>
+          <input type="date" name="Sign Date" class="form-control" required />
+        </div>
+      </div>
+
+
+      <div class="confirm-checkbox form-row my-3">
+        <div class="col-12 allCenter">
+          <input type="checkbox" class="p-0" id='final-checkbox' required />
+          <label for="" class="m-0 pl-3">By checking this box I agree to have read and agree to the legal
+            agreement above.</label>
+        </div>
+      </div>
+
+      <button id="submit-btn" class="btn btn-primary" type="submit">Submit</button>
+    </form>
+  </div>
+  <div class="container my-5 p-4" id="screent-shot-of-original-form">
+    
+  </div>
+  <script src="signature.js"></script>
+  <script src="html2canvas.min.js"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>
