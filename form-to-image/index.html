@@ -10,17 +10,17 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 
-<body>
+<body id="original-form">
   <!--Logo-->
   <header class="text-center bg-light py-3 mb-5">
     <img src="./transparent-logo.png" alt="" />
     <h1>CRYOSKIN WAIVER</h1>
   </header>
 
-  <div class="container border mb-5" id="original-form">
+  <div class="container border mb-5">
     <!--Client Information-->
     <div class="form-title font-weight-bold bg-light">Client Information</div>
-    <form action="" id="client-form" name='Client Form' netlify>
+    <form method="POST" id="client-form" name="Client-Form" netlify>
       <div class="form-group p-3">
         <div class="form-row">
           <div class="col-sm-6 mt-3">
@@ -30,7 +30,7 @@
 
           <div class="col-md-6 mt-3">
             <label for="">Date of Birth</label>
-            <input type="date" class="form-control" name="Birth Date" required />
+            <input type="date" class="form-control" name="Birth-Date" required />
           </div>
         </div>
 
@@ -42,7 +42,7 @@
 
           <div class="col-md-6 mt-3">
             <label for="">Phone Number</label>
-            <input type="tel" name="Phone Number" class="form-control" placeholder="+69123456789" required />
+            <input type="tel" name="Phone-Number" class="form-control" placeholder="+69123456789" required />
           </div>
         </div>
       </div>
@@ -143,7 +143,7 @@
 
         <div class="confirm-checkbox form-row my-3">
           <div class="col-12 allCenter">
-            <input type="checkbox" class="p-0" required />
+            <input type="checkbox" name="agreement-1" class="p-0" required />
             <label for="" class="text-muted m-0 pl-3"></label>
             *I have read and acknowledged the contraindications of Cryoskin
             Slimming.</label>
@@ -185,7 +185,7 @@
 
         <div class="confirm-checkbox form-row my-3">
           <div class="col-12 allCenter">
-            <input type="checkbox" class="p-0" required />
+            <input type="checkbox" name="agreement-2" class="p-0" required />
             <label for="" class="text-muted m-0 pl-3">*I have read and acknowledged the contraindications of Cryoskin
               Facial.</label>
           </div>
@@ -207,7 +207,7 @@
               <label for="" class="m-0 font-weight-bold">
                 If you do not give consent to such usage of your imagery by
                 the Company please initial here:
-                <input type="checkbox" class="p-0" /></label>
+                <input type="checkbox" name="agreement-3" class="p-0" /></label>
             </div>
           </div>
         </div>
@@ -229,8 +229,8 @@
 
           </canvas>
           <!-- <button class="btn btn-primary" type="button" id="sig-submitBtn">
-              Submit Signature
-            </button> -->
+                Submit Signature
+              </button> -->
           <button class="btn align-self-end" type="button" id="sig-clearBtn">
             Clear Signature
           </button>
@@ -238,25 +238,29 @@
 
         <div class="col-lg-6 mt-3">
           <label for="" class="m-0">Date</label>
-          <input type="date" name="Sign Date" class="form-control" required />
+          <input type="date" name="Signature-Date" class="form-control" required />
         </div>
       </div>
 
 
       <div class="confirm-checkbox form-row my-3">
         <div class="col-12 allCenter">
-          <input type="checkbox" class="p-0" id='final-checkbox' required />
+          <input type="checkbox" name="agreement-4" class="p-0" id='final-checkbox' required />
           <label for="" class="m-0 pl-3">By checking this box I agree to have read and agree to the legal
             agreement above.</label>
         </div>
       </div>
+      <div class="my-3" data-html2canvas-ignore="true">
+        <small>Please now click on download button then upload the dowloaded file by clicking "choose file"
+          button.</small><br>
+        <input type="button" name="download-button" id="download-btn" class="btn btn-info" value="download form">
+        <input type="file" name="form-copy" required>
+      </div>
 
-      <button id="submit-btn" class="btn btn-primary" type="submit">Submit</button>
+      <button class="btn btn-primary" type="submit">Submit</button>
     </form>
   </div>
-  <div class="container my-5 p-4" id="screent-shot-of-original-form">
-    
-  </div>
+
   <script src="signature.js"></script>
   <script src="html2canvas.min.js"></script>
   <script src="main.js"></script>

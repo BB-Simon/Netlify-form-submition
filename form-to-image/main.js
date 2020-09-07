@@ -1,22 +1,23 @@
 window.onload = function () {
-  const submitBtn = document.getElementById("submit-btn");
-  submitBtn.addEventListener("click", getScreenShotOfOriginalForm);
+  const downloadBtn = document.getElementById("download-btn");
+  downloadBtn.addEventListener("click", downloadTheForm);
 };
 
-function getScreenShotOfOriginalForm(e) {
-  e.preventDefault();
-  e.target.innerHTML = "submited";
-  setTimeout(() => {
-    e.target.innerHTML = "submit";
-  }, 2000);
+function downloadTheForm(e) {
   window.scrollTo(0, 0);
-  html2canvas(document.getElementById("original-form")).then(function (canvas) {
-    let img64 = canvas.toDataURL();
-    let img = document.createElement("img");
-    img.style.width = "100%";
-    img.style.height = "100%";
-    img.src = img64;
-    let box = document.getElementById("screent-shot-of-original-form");
-    box.appendChild(img);
+  html2canvas(document.getElementById("original-form")).then((canvas) => {
+    if (window.navigator.msSaveBlob) {
+      window.navigator.msSaveBlob(
+        canvas.msToBlob(),
+        new Date().getTime() + ".png"
+      );
+    } else {
+      const a = document.createElement("a");
+      document.body.appendChild(a);
+      a.href = canvas.toDataURL();
+      a.download = new Date().getTime() + ".png";
+      a.click();
+      document.body.removeChild(a);
+    }
   });
 }
